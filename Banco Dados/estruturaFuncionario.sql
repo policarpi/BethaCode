@@ -1,5 +1,6 @@
 
-CREATE TABLE cargos (	i_cargos	SERIAL,
+CREATE TABLE cargos (	
+	i_cargos	SERIAL,
 	descricao	VARCHAR(60)	NOT NULL,
 	salario		REAL NOT NULL,
 	PRIMARY KEY(i_cargos)
@@ -55,3 +56,5 @@ CREATE TABLE calculos_composicao(
 	valor_calculado			REAL,
 	PRIMARY KEY (i_calculos_composicao)
 );
+	
+select * from cargos
