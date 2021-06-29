@@ -77,8 +77,8 @@ SELECT DISTINCT funcionarios.nome AS Nome, funcionarios.cpf AS CPF , cargos.desc
 		
 -- 13 – Com o group by, demonstre a soma dos  salários calculados para cada competência. 
 
-SELECT mes_competencia AS Comperencia, count (*) AS Ocorrencias,
-	SUM (valor_bruto) AS somaDasAliquodtas
+SELECT mes_competencia AS Competencia, count (*) AS Ocorrencias,
+	SUM (valor_bruto) AS ValorTotal
 		FROM  calculos
 			GROUP BY mes_competencia
 				ORDER BY mes_competencia ASC
