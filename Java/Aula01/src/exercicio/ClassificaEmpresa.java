@@ -1,8 +1,8 @@
-package aula01;
+package exercicio;
 
 import java.util.Scanner;
 
-public class ExecicioIF {
+public class ClassificaEmpresa {
 	
 	public static void main (String [] args) {
 		

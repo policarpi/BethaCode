@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Jogador {
 
-	public static void main (String [] args) {
+	public static void main (String [] args, char[] sumSal) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Digite o nome do jogador:  ");
 		String jogador = sc.next();
@@ -22,7 +22,7 @@ public class Jogador {
 									mensagemFinal += " para sua idade não temos vaga";
 								}	
 				System.out.println(mensagemFinal);
-		sc.close();
+		sc.close();		
 	}
 }
 
