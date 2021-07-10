@@ -22,16 +22,17 @@ public class testaWile {
 	do {
 		System.out.print("Informe um numero qualquer ");
 		numeroInformado = sc.nextDouble();
-
-			if (numeroInformado % 2 != 0) {
-				qntImpar ++;
-				} else {
-					qntPar ++;
-				}
-					if(numerosInformados.trim() != "") {
-						numerosInformados += ",";
+			if(numeroInformado != 0) {
+				if (numeroInformado % 2 != 0) {
+					qntImpar ++;
+					} else {
+						qntPar ++;
 					}
-						numerosInformados += numeroInformado;
+				}
+						if(numerosInformados.trim() != "") {
+							numerosInformados += ",";
+						}
+							numerosInformados += numeroInformado;
 					
 	} while (numeroInformado != 0);
 	
@@ -46,9 +47,6 @@ public class testaWile {
 	        "", "Execio testa wile", 
 	        JOptionPane.INFORMATION_MESSAGE);
 	    System.exit(0);
-	
-	
-	
 	sc.close();	
 	}
 
