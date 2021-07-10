@@ -38,6 +38,7 @@ public class testaWile {
 //	System.out.println("Numeros informados: " + numerosInformados);
 //	System.out.println("Numeros impar: " + qntImpar);
 //	System.out.println("Numeros Par: " + qntPar);
+	
 		JOptionPane.showMessageDialog(frame,
 	        "\n Numeros par : " + qntPar + 
 	        "\n Numeros impar " + qntImpar +  
