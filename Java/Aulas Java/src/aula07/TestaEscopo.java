@@ -1,4 +1,4 @@
-package aula2;
+package aula07;
 
 public class TestaEscopo {
 	public static void main(String[] args) {

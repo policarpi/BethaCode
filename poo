@@ -1,0 +1,8 @@
+
+
+
+Encapsulamento => proteger os atributos das classes -> aparecer sometne o que realmente interessa
+Abstração => retirar coisas do mundo real apra classe e funcionalidade para que funcione a classe.
+	Obejto no mundo real	| objeto conputacional
+	Caracteristica		->| Atributos
+	Comportamento		->| Métodos
