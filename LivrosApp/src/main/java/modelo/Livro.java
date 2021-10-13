@@ -23,6 +23,13 @@ public class Livro {
     @Column(name = "ano_publicacao")
     private Integer anoPublicacao;
 
+    public Livro(String titulo, String autor, Tipo tipo, Integer anoPublicacao) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.tipo = tipo;
+        this.anoPublicacao = anoPublicacao;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -65,12 +72,6 @@ public class Livro {
 
     @Override
     public String toString() {
-        return "Livro{" +
-                "id=" + id +
-                ", titulo='" + titulo + '\'' +
-                ", autor='" + autor + '\'' +
-                ", tipo='" + tipo + '\'' +
-                ", Ano Publicaçai=" +anoPublicacao+
-                '}';
+        return "Livro{" + "id=" + id +", titulo='" + titulo + ", autor='" + autor + ", tipo=" + tipo +", anoPublicacao=" + anoPublicacao +'}';
     }
 }
