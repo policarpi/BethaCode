@@ -15,7 +15,6 @@ public class LivrosApp {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("minhaConexao");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-
         Query minhaQuery = entityManager.createQuery("select l from Livro l where l.tipo.id = :idTipo and l.anoPublicacao < :ano");
         minhaQuery.setParameter("idTipo", 2);
         minhaQuery.setParameter("ano",2020);
@@ -23,14 +22,11 @@ public class LivrosApp {
         List<Livro> meusLivros = minhaQuery.getResultList();
         meusLivros.forEach(livro -> System.out.println(livro));
 
-
-
 //        Tipo tipoCadastrado = entityManager.find(Tipo.class,2);
 
-
-//          Query minhaQuery = entityManager.createQuery("select l from Livro l");
+//         Query minhaQuery = entityManager.createQuery("select l from Livro l");
 //         List<Livro> meusLivros =  minhaQuery.getResultList();
-//          meusLivros.forEach(livro -> System.out.println(livro));
+//         meusLivros.forEach(livro -> System.out.println(livro));
 
 //          Query minhQuery1 = entityManager.createQuery("select l.titulo from Livro l");
 //          List<String> meusLivrosT =  minhQuery1.getResultList();
